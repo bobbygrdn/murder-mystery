@@ -1,12 +1,15 @@
-import './App.css';
+import { Suspense } from "react";
+import Loading from "./components/loading/Loading";
+import React from "react";
+
+const Main = React.lazy(() => import("./pages/Main"));
 
 function App() {
+
   return (
-    <>
-      <div className="App">
-        <h1>My App</h1>
-      </div>
-    </>
+    <Suspense fallback={<Loading />}>
+      <Main />
+    </Suspense>
   );
 }
 
