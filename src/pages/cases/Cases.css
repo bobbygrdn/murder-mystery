@@ -1,0 +1,9 @@
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #A8A29E;
+    flex-grow: 1;
+    padding: 1.5rem;
+    overflow-y: auto;
+}
